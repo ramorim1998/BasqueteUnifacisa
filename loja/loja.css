@@ -1,0 +1,40 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+nav{
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+.mercadorias{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(151, 151, 151, 0.5)
+}
+.mercadoria{
+    width: 10%;
+    height: 100%;
+    margin: 3%;
+}
+a{
+    margin: 3%;
+    font-size: 80%;
+}
+footer{
+    background-color: orange;
+}
+#carrinho{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+    margin-right: 10%;
+}
+#valor{
+    font-size: 200%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -5%;
+}
+.carrinho{
+    width: 50%;
+}
