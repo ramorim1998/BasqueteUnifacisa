@@ -5,7 +5,10 @@ function entrar(){
     var senha = document.getElementById("senha");
     var confirme_senha = document.getElementById("confirme-senha");
 
-    if(nome.value!="" || nome.value!=null){
-        document.getElementsByTagName("p").style.color = "orange";
+    if(nome.value!="" && email.value !="" && cpf.value !="" && senha.value !="" && confirme_senha.value == senha.value){
+        window.location = "../loja/loja.html";
+    }else{
+        alert('nome invalido')
     }
+
 }

@@ -3,20 +3,21 @@
 <head>
     <link rel="stylesheet" href="login.css" type="text/css">
     <title>Basquete Unifacisa</title>
+    <script src="login.js"></script>
     <meta charset="utf-8">
 </head>
 <body>
-    <script src="//login/login.js"></script>
+    
     <!--barra de navegação-->
     <nav>
-        <a href="/loja.html">LOJA</a>
+        <a href="../loja/loja.html">LOJA</a>
         <a href="">CONTATO</a>
         <a href="">JOGO</a>
-        <a id="entrada" href="">ENTRAR</a>
+        <a id="entrada" href="login.html">ENTRAR</a>
         </nav>
     <!--area de cadastro-->
     <div class="login">
-        <p>Nome:</p>
+        <p id="test">Nome:</p>
         <input type="text" placeholder="Jack Jacare" id="nome">
         <p>Email:</p>
         <input type="email" placeholder="jackunifacisa@maisunifacisa.com.br" id="email">
@@ -27,7 +28,9 @@
         <p>Digite novamente sua senha:</p>
         <input type="password" id="confirme-senha">
         <button id="confirme" type="submit" onclick="entrar()">Criar sua conta</button>
-    
+        <footer>
+            <p id="feedback">feedback</p>
+        </footer>
 
     </div>
 </body>

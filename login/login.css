@@ -8,10 +8,11 @@ body{
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    background-image: url(/contents/background.jpg);
-    background-size: 98%;
+    background-image: url(../contents/background.jpg);
+    background-color: blue;
+    background-position: center;
     background-repeat: no-repeat;
-    opacity: 70%;
+    background-size: cover;
     
 }
 .login{
@@ -25,8 +26,8 @@ body{
 nav{
     display: flex;
     justify-content: end;
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 70%;
     background-color: rgba(155,155,155, 0.1);
 }
 input{
@@ -38,4 +39,15 @@ a{
 }
 p{
     margin-left: 2%;
+}
+footer{
+    color: black;
+}
+input{
+    width: 50%;
+}
+button{
+    border-color: red;
+    background-color: red;
+    width: 50%;
 }
