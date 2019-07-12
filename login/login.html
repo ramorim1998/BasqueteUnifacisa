@@ -16,22 +16,25 @@
         <a id="entrada" href="login.html">ENTRAR</a>
         </nav>
     <!--area de cadastro-->
-    <div class="login">
-        <p id="test">Nome:</p>
-        <input type="text" placeholder="Jack Jacare" id="nome">
-        <p>Email:</p>
-        <input type="email" placeholder="jackunifacisa@maisunifacisa.com.br" id="email">
-        <p>CPF:</p>
-        <input type="text" placeholder="00000000000" id="cpf">
-        <p>Senha:</p>
-        <input type="password" id="senha">
-        <p>Digite novamente sua senha:</p>
-        <input type="password" id="confirme-senha">
+    <fieldset>
+        <legend><img src="../contents/basqueteLOGO.png" alt="logoBasqueteUnifacisa"></legend>
+    <form class="login">
+        <label for="nome">Nome:</label>
+        <input type="text" placeholder="Jack Jacare" id="nome" required>
+        <label for="email">E-mail</label>
+        <input type="email" placeholder="jackunifacisa@maisunifacisa.com.br" id="email" required>
+        <label for="cpf">CPF: </label>
+        <input type="text" placeholder="00000000000" id="cpf" required>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" required>
+        <label for="confirme-senha">Digite novamente sua senha:</label>
+        <input type="password" id="confirme-senha" required>
         <button id="confirme" type="submit" onclick="entrar()">Criar sua conta</button>
         <footer>
-            <p id="feedback">feedback</p>
+            <p id="feedback"></p>
         </footer>
 
-    </div>
+    </form>
+    </fieldset>
 </body>
 </html>
