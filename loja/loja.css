@@ -21,18 +21,19 @@ nav{
 }
 .mercadoria{
   width: 80%;
-  background-color: orange;
+  background-color: #F87F2F;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25%;
   margin: 4%;
 }
 a{
+    text-decoration: none;
     color: white;
     margin: 3%;
     font-size: 80%;
 }
 a:active{
-    text-decoration: underline orange;
+    text-decoration: underline #F87F2F;
 }
 footer{
     margin-top: -5%;
@@ -42,17 +43,21 @@ footer{
     text-align: left;
     padding: 5% 15%;
 }
-#carrinho{
+#carrinhoNome{
+    color: gray;
+    font-size: 110%;    
     display: flex;
     justify-content: flex-end;
     margin-bottom: 5%;
-    margin-right: 10%;
+    margin-right: 35%;
 }
 #valor{
+    color: gray;
     font-size: 200%;
     display: flex;
     justify-content: flex-end;
     margin-top: -5%;
+    margin-right: 30%;
 }
 .carrinho{
     width: 50%;
@@ -60,7 +65,7 @@ footer{
 input{
     margin: 3%;
     border: none;
-    background-color: orange;
+    background-color: #F87F2F;
     color: white;
 }
 #carrinhoBranco{
@@ -75,10 +80,11 @@ input{
     padding-left: 2%;
     padding-right: 2%;
     border-radius: 10%;
-    background-color: orange;
+    background-color: #F87F2F;
 }
 h1{
-
+    font-weight: 400;
+    color: gray;
     font-size: 200%;
 }
 #linha{
@@ -90,6 +96,7 @@ h1{
     margin-left: 95%;
 }
 hr{
-    color: orange;
+    border: 2px solid #F87F2F;
+    color: o#F87F2F;
     size: 100%;
 }

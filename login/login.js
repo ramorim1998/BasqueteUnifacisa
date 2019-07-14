@@ -6,7 +6,7 @@ function entrar(){
     var senha = document.getElementById("senha");
     var confirme_senha = document.getElementById("confirme-senha");*/
     // validação de informações do usuario para acesso a loja;
-    var infos = [ document.getElementById("nome"),IsEmail(any),document.getElementById("cpf")
+    var infos = [ document.getElementById("nome"),IsEmail(email),document.getElementById("cpf")
 ,document.getElementById("senha"), document.getElementById("confirme-senha")]
 
     if(!infos.includes("") || infos.includes(true)){
@@ -23,4 +23,7 @@ function IsEmail(email){
     var checkend=/.[a-zA-Z]{2,3}$/;
     if(((email.search(exclude) != -1)||(email.search(check)) == -1)||(email.search(checkend) == -1)){return false;}
     else {return true;}
+}
+function senha(){
+    
 }
