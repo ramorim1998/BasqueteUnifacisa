@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="login.css" type="text/css">
     <title>Basquete Unifacisa</title>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 </head>
 <body>
         <script src="login.js"></script>
@@ -25,9 +26,9 @@
         <input type="email" placeholder="jackunifacisa@maisunifacisa.com.br" id="email" required>
         <label for="cpf">CPF: </label>
         <input type="text" placeholder="00000000000" id="cpf" required>
-        <label for="senha">Senha</label>
+        <label for="senha">Senha:</label>
         <input type="password" id="senha" required>
-        <label for="confirme-senha">Digite novamente sua senha:</label>
+        <label for="confirme-senha" id="label-confirme">Digite novamente sua senha:</label>
         <input type="password" id="confirme-senha" required>
         <button id="confirme" type="submit" onclick="entrar()">Criar sua conta</button>
         <footer>
@@ -36,5 +37,13 @@
 
     </form>
     </fieldset>
+  
+    <div class="jack-informe">  
+    <h1 class="roxo">JACK TE CONVIDA</h1>
+    <h1 class="azul">PARA CONHECER O SITE</h1>
+    <h1 class="roxo">DE BASQUETE DA UNIFACISA</h1>
+    <img src="../contents/jackAlerta.svg" alt="jackalert" id="jack">
+
+    </div>
 </body>
 </html>
