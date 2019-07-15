@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="login.css" type="text/css">
         <!--normalize.css padronização de css para diversos browsers-->
-    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="/normalize.css" type="text/css">
     <title>Basquete Unifacisa</title>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -11,35 +11,36 @@
 <body>
         <script src="login.js"></script>
 
-    <!--barra de navegação-->
+    <!--Barra de navegação com links de auxilio ao usuario-->
     <nav>
         <a href="../loja/loja.html">LOJA</a>
         <a href="">CONTATO</a>
         <a href="">JOGO</a>
         <a id="entrada" href="login.html">ENTRAR</a>
         </nav>
-    <!--area de cadastro-->
+    <!--Formulario de cadastro do usuario que esteja tendo primeiro contato com a plataforma do basquete-->
     <fieldset>
         <legend><img src="../contents/basqueteLOGO.png" alt="logoBasqueteUnifacisa"></legend>
     <form class="login">
         <label for="nome">Nome:</label>
         <input type="text" placeholder="Jack Jacare" id="nome" required>
         <label for="email">E-mail</label>
-        <input type="email" placeholder="jackunifacisa@maisunifacisa.com.br" id="email" required>
+        <input type="email" pattern="[^ @]*@[^ @]*"
+         placeholder="jackunifacisa@maisunifacisa.com.br" id="email" required>
         <label for="cpf">CPF: </label>
         <input type="number" placeholder="00000000000" id="cpf" required minlength="11">
         <label for="senha">Senha:</label>
         <input type="password" id="senha" required minlength="5">
         <label for="confirme-senha" id="label-confirme">Digite novamente sua senha:</label>
         <input type="password" id="confirme-senha" required>
-        <button id="confirme" type="submit" onclick="entrar()">Criar sua conta</button>
+        <button id="confirme" onclick="entrar()">Criar sua conta</button>
         <footer>
             <p id="feedback"></p>
         </footer>
 
     </form>
     </fieldset>
-  
+  <!--imagem informativa-->
     <div class="jack-informe">  
     <h1 class="roxo">JACK TE CONVIDA</h1>
     <h1 class="azul">PARA CONHECER O SITE</h1>

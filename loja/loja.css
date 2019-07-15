@@ -8,8 +8,11 @@ body{
     height: 100%;
     flex-direction: column;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 nav{
+    width: 100%;
     background-image: url(../contents/backgroundSVG.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -67,6 +70,7 @@ footer{
     margin-right: 30%;
 }
 .carrinho{
+    margin-right: 45%;
     width: 50%;
 }
 input{
@@ -105,5 +109,11 @@ h1{
 hr{
     border: 2px solid #F87F2F;
     color: o#F87F2F;
-    size: 100%;
+    size: 100%
+}
+#nome{
+    position: relative;
+    margin-left: -60%;
+    margin-bottom: -5%;
+    color: black;    
 }

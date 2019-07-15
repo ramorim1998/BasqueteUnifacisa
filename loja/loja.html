@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head onload=nome()>
     <link rel="stylesheet" href="loja.css" type="text/css">
     <!--normalize.css padronização de css para diversos browsers-->
-    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="/normalize.css" type="text/css">
     <title>Loja - Basquete Unifacisa</title>
     <meta charset="utf-8">
 </head>
 <body>
+
     <script src="loja.js"></script>
+    <script src="../login/login.js"></script>
+    <h1 id="nome" ></h1>
+    <!--Barra de navegação com links de auxilio ao usuario-->
         <nav>
             <a href="../loja/loja.html">LOJA</a>
             <a href="">CONTATO</a>
             <a href="">JOGO</a>
             <a id="saida" href="../login/login.html">SAIR</a>
         </nav>
-
+<!--visual carrinho laranja-->
     <div class="carrinho">
         <h1>PRODUTOS</h1>
         <div id="linha">
@@ -24,9 +28,10 @@
         </div>
         
     </div>
+    <!--valor total dos produtos adicionados pelo usuario-->
     <span id="carrinhoNome">carrinho:</span>
     <span id="valor">R$: 0.00</span>
-
+<!--catalago de produtos vendidos-->
     <div class="mercadorias">
         <div class="mercadoria">
             <img src="../contents/blusaBranca.svg" alt="blusaBraca" style="width: 100%">
