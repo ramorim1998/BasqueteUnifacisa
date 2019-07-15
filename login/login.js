@@ -7,7 +7,6 @@ function entrar(){
    //verificação se os valores passados foram corretos, para que haja acesso a loja
        if(!infos.includes("") && infos[3] == infos[4]){
           window.location.href = '../loja/loja.html';
-         window.open('../loja/loja.html');
          sessionStorage.setItem("nome","joaquim");
        }else{
            document.getElementById("feedback").style.color = "red";
