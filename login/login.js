@@ -10,7 +10,6 @@ function entrar(){
        if(nome != "", email != "", cpf!="", senha !="", confirme == senha){
           window.location.href = "../loja/loja.html";
            localStorage.setItem('nome',nome);
-           window.open("../loja/loja.html");
        }else{
            document.getElementById("feedback").style.color = "red";
            document.getElementById("feedback").innerHTML = "preencha todos os campos para concluir!"
