@@ -1,13 +1,16 @@
 
 function entrar(){
     // validação de informações do usuario para acesso a loja;
-   var email = document.getElementById("email");
-   var infos = [ document.getElementById("nome").value,document.getElementById("email").value,document.getElementById("cpf").value
-   ,document.getElementById("senha").value, document.getElementById("confirme-senha").value];
-   //verificação se os valores passados foram corretos, para que haja acesso a loja
-       if(!infos.includes("") && infos[3] == infos[4]){
-          window.location.href = '../loja/loja.html';
-         sessionStorage.setItem("nome","joaquim");
+    var nome = document.getElementById("nome").value;
+   var email = document.getElementById("email").value;
+   var cpf = document.getElementById("cpf").value;
+   var senha = document.getElementById("senha").value;
+   var confirme = document.getElementById("confirme-senha").value;
+
+       if(nome != "", email != "", cpf!="", senha !="", confirme == senha){
+          window.location.href = "../loja/loja.html";
+           localStorage.setItem('nome',nome);
+           window.open("../loja/loja.html");
        }else{
            document.getElementById("feedback").style.color = "red";
            document.getElementById("feedback").innerHTML = "preencha todos os campos para concluir!"

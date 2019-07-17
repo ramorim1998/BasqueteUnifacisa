@@ -58,8 +58,9 @@ footer{
     font-size: 110%;    
     display: flex;
     justify-content: flex-end;
+    margin-top: -5%;
     margin-bottom: 5%;
-    margin-right: 35%;
+    margin-right: -35%;
 }
 #valor{
     color: gray;
@@ -67,7 +68,7 @@ footer{
     display: flex;
     justify-content: flex-end;
     margin-top: -5%;
-    margin-right: 30%;
+    margin-right: -30%;
 }
 .carrinho{
     margin-right: 45%;
@@ -116,4 +117,7 @@ hr{
     margin-left: -60%;
     margin-bottom: -5%;
     color: black;    
+}
+#logo{
+    margin-right: 45%;
 }
